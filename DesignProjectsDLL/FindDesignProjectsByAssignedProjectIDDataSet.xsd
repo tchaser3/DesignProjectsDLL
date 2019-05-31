@@ -36,6 +36,7 @@
               <Mapping SourceColumn="CompleteDate" DataSetColumn="CompleteDate" />
               <Mapping SourceColumn="Coordinator" DataSetColumn="Coordinator" />
               <Mapping SourceColumn="ProjectNotes" DataSetColumn="ProjectNotes" />
+              <Mapping SourceColumn="OfficeID" DataSetColumn="OfficeID" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -47,7 +48,7 @@
   <xs:element name="FindDesignProjectsByAssignedProjectIDDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="FindDesignProjectsByAssignedProjectIDDataSet" msprop:Generator_UserDSName="FindDesignProjectsByAssignedProjectIDDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="FindDesignProjectsByAssignedProjectID" msprop:Generator_TableClassName="FindDesignProjectsByAssignedProjectIDDataTable" msprop:Generator_TableVarName="tableFindDesignProjectsByAssignedProjectID" msprop:Generator_TablePropName="FindDesignProjectsByAssignedProjectID" msprop:Generator_RowDeletingName="FindDesignProjectsByAssignedProjectIDRowDeleting" msprop:Generator_RowChangingName="FindDesignProjectsByAssignedProjectIDRowChanging" msprop:Generator_RowEvHandlerName="FindDesignProjectsByAssignedProjectIDRowChangeEventHandler" msprop:Generator_RowDeletedName="FindDesignProjectsByAssignedProjectIDRowDeleted" msprop:Generator_UserTableName="FindDesignProjectsByAssignedProjectID" msprop:Generator_RowChangedName="FindDesignProjectsByAssignedProjectIDRowChanged" msprop:Generator_RowEvArgName="FindDesignProjectsByAssignedProjectIDRowChangeEvent" msprop:Generator_RowClassName="FindDesignProjectsByAssignedProjectIDRow">
+        <xs:element name="FindDesignProjectsByAssignedProjectID" msprop:Generator_TableClassName="FindDesignProjectsByAssignedProjectIDDataTable" msprop:Generator_TableVarName="tableFindDesignProjectsByAssignedProjectID" msprop:Generator_RowChangedName="FindDesignProjectsByAssignedProjectIDRowChanged" msprop:Generator_TablePropName="FindDesignProjectsByAssignedProjectID" msprop:Generator_RowDeletingName="FindDesignProjectsByAssignedProjectIDRowDeleting" msprop:Generator_RowChangingName="FindDesignProjectsByAssignedProjectIDRowChanging" msprop:Generator_RowEvHandlerName="FindDesignProjectsByAssignedProjectIDRowChangeEventHandler" msprop:Generator_RowDeletedName="FindDesignProjectsByAssignedProjectIDRowDeleted" msprop:Generator_RowClassName="FindDesignProjectsByAssignedProjectIDRow" msprop:Generator_UserTableName="FindDesignProjectsByAssignedProjectID" msprop:Generator_RowEvArgName="FindDesignProjectsByAssignedProjectIDRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="TransactionID" msprop:Generator_ColumnVarNameInTable="columnTransactionID" msprop:Generator_ColumnPropNameInRow="TransactionID" msprop:Generator_ColumnPropNameInTable="TransactionIDColumn" msprop:Generator_UserColumnName="TransactionID" type="xs:int" />
@@ -112,6 +113,7 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="OfficeID" msprop:Generator_ColumnVarNameInTable="columnOfficeID" msprop:Generator_ColumnPropNameInRow="OfficeID" msprop:Generator_ColumnPropNameInTable="OfficeIDColumn" msprop:Generator_UserColumnName="OfficeID" type="xs:int" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
