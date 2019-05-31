@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{75DD0FC8-92D3-4D7B-983A-638E6CE24C56}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DesignProjectsDLL</RootNamespace>
+    <AssemblyName>DesignProjectsDLL</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NewEventLogDLL">
+      <HintPath>..\..\Blue Jay Class Library\NewEventLogDLL.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CloseDesignProjectEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CloseDesignProjectEntry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DesignProjectsClass.cs" />
+    <Compile Include="DesignProjectsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DesignProjectsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindDesignProjectsByAddressDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindDesignProjectsByAddressDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindDesignProjectsByAssignedProjectIDDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindDesignProjectsByAssignedProjectIDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindDesignProjectsByDateRangeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindDesignProjectsByDateRangeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindDesignProjectsByJobStatusDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindDesignProjectsByJobStatusDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindDesignProjectsByLocationDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindDesignProjectsByLocationDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindOpenDesignProjectLocationDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindOpenDesignProjectLocationDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindOpenDesignProjectsByLocationDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindOpenDesignProjectsByLocationDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindOpenDesignProjectsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindOpenDesignProjectsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InsertDesignProjectEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InsertDesignProjectEntry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateDesignJobStatus.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateDesignJobStatus.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateDesignProjectBJCInvoice.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateDesignProjectBJCInvoice.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateDesignProjectStateZipEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateDesignProjectStateZipEntry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateDesignProjectSurveyInvoiceEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateDesignProjectSurveyInvoiceEntry.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="CloseDesignProjectEntry.xsc">
+      <DependentUpon>CloseDesignProjectEntry.xsd</DependentUpon>
+    </None>
+    <None Include="CloseDesignProjectEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CloseDesignProjectEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CloseDesignProjectEntry.xss">
+      <DependentUpon>CloseDesignProjectEntry.xsd</DependentUpon>
+    </None>
+    <None Include="DesignProjectsDataSet.xsc">
+      <DependentUpon>DesignProjectsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DesignProjectsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DesignProjectsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DesignProjectsDataSet.xss">
+      <DependentUpon>DesignProjectsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindDesignProjectsByAddressDataSet.xsc">
+      <DependentUpon>FindDesignProjectsByAddressDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindDesignProjectsByAddressDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindDesignProjectsByAddressDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindDesignProjectsByAddressDataSet.xss">
+      <DependentUpon>FindDesignProjectsByAddressDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindDesignProjectsByAssignedProjectIDDataSet.xsc">
+      <DependentUpon>FindDesignProjectsByAssignedProjectIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindDesignProjectsByAssignedProjectIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindDesignProjectsByAssignedProjectIDDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindDesignProjectsByAssignedProjectIDDataSet.xss">
+      <DependentUpon>FindDesignProjectsByAssignedProjectIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindDesignProjectsByDateRangeDataSet.xsc">
+      <DependentUpon>FindDesignProjectsByDateRangeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindDesignProjectsByDateRangeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindDesignProjectsByDateRangeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindDesignProjectsByDateRangeDataSet.xss">
+      <DependentUpon>FindDesignProjectsByDateRangeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindDesignProjectsByJobStatusDataSet.xsc">
+      <DependentUpon>FindDesignProjectsByJobStatusDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindDesignProjectsByJobStatusDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindDesignProjectsByJobStatusDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindDesignProjectsByJobStatusDataSet.xss">
+      <DependentUpon>FindDesignProjectsByJobStatusDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindDesignProjectsByLocationDataSet.xsc">
+      <DependentUpon>FindDesignProjectsByLocationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindDesignProjectsByLocationDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindDesignProjectsByLocationDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindDesignProjectsByLocationDataSet.xss">
+      <DependentUpon>FindDesignProjectsByLocationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindOpenDesignProjectLocationDataSet.xsc">
+      <DependentUpon>FindOpenDesignProjectLocationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindOpenDesignProjectLocationDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindOpenDesignProjectLocationDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindOpenDesignProjectLocationDataSet.xss">
+      <DependentUpon>FindOpenDesignProjectLocationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindOpenDesignProjectsByLocationDataSet.xsc">
+      <DependentUpon>FindOpenDesignProjectsByLocationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindOpenDesignProjectsByLocationDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindOpenDesignProjectsByLocationDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindOpenDesignProjectsByLocationDataSet.xss">
+      <DependentUpon>FindOpenDesignProjectsByLocationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindOpenDesignProjectsDataSet.xsc">
+      <DependentUpon>FindOpenDesignProjectsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindOpenDesignProjectsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindOpenDesignProjectsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindOpenDesignProjectsDataSet.xss">
+      <DependentUpon>FindOpenDesignProjectsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InsertDesignProjectEntry.xsc">
+      <DependentUpon>InsertDesignProjectEntry.xsd</DependentUpon>
+    </None>
+    <None Include="InsertDesignProjectEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InsertDesignProjectEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InsertDesignProjectEntry.xss">
+      <DependentUpon>InsertDesignProjectEntry.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="UpdateDesignJobStatus.xsc">
+      <DependentUpon>UpdateDesignJobStatus.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateDesignJobStatus.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UpdateDesignJobStatus.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UpdateDesignJobStatus.xss">
+      <DependentUpon>UpdateDesignJobStatus.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateDesignProjectBJCInvoice.xsc">
+      <DependentUpon>UpdateDesignProjectBJCInvoice.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateDesignProjectBJCInvoice.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UpdateDesignProjectBJCInvoice.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UpdateDesignProjectBJCInvoice.xss">
+      <DependentUpon>UpdateDesignProjectBJCInvoice.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateDesignProjectStateZipEntry.xsc">
+      <DependentUpon>UpdateDesignProjectStateZipEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateDesignProjectStateZipEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UpdateDesignProjectStateZipEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UpdateDesignProjectStateZipEntry.xss">
+      <DependentUpon>UpdateDesignProjectStateZipEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateDesignProjectSurveyInvoiceEntry.xsc">
+      <DependentUpon>UpdateDesignProjectSurveyInvoiceEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateDesignProjectSurveyInvoiceEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UpdateDesignProjectSurveyInvoiceEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UpdateDesignProjectSurveyInvoiceEntry.xss">
+      <DependentUpon>UpdateDesignProjectSurveyInvoiceEntry.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
