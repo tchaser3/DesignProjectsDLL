@@ -57,6 +57,26 @@ namespace DesignProjectsDLL
 
         UpdateDesignProjectStateZipEntryTableAdapters.QueriesTableAdapter aUpdateDesignProjectStateZipTableAdapter;
 
+        UpdateDesignProjectBillingCodeEntryTableAdapters.QueriesTableAdapter aUpdateDesignProjectBillingCodeTableAdapter;
+
+        public bool UpdateDesignProjectBillingID(int intProjectID, int intBillingID)
+        {
+            bool blnFatalError = false;
+
+            try
+            {
+                aUpdateDesignProjectBillingCodeTableAdapter = new UpdateDesignProjectBillingCodeEntryTableAdapters.QueriesTableAdapter();
+                aUpdateDesignProjectBillingCodeTableAdapter.UpdateDesignProjectBillingCode(intProjectID, intBillingID);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Design Project Class // Update Design Project Billing ID " + Ex.Message);
+
+                blnFatalError = true;
+            }
+
+            return blnFatalError;
+        }
         public bool UpdateDesignProjectStateZip(int intTransactionID, string strState, string strZipCode)
         {
             bool blnFatalError = false;

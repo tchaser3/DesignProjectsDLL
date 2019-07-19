@@ -111,6 +111,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>UpdateDesignJobStatus.xsd</DependentUpon>
     </Compile>
+    <Compile Include="UpdateDesignProjectBillingCodeEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateDesignProjectBillingCodeEntry.xsd</DependentUpon>
+    </Compile>
     <Compile Include="UpdateDesignProjectBJCInvoice.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -264,6 +269,17 @@
     </None>
     <None Include="UpdateDesignJobStatus.xss">
       <DependentUpon>UpdateDesignJobStatus.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateDesignProjectBillingCodeEntry.xsc">
+      <DependentUpon>UpdateDesignProjectBillingCodeEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateDesignProjectBillingCodeEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UpdateDesignProjectBillingCodeEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UpdateDesignProjectBillingCodeEntry.xss">
+      <DependentUpon>UpdateDesignProjectBillingCodeEntry.xsd</DependentUpon>
     </None>
     <None Include="UpdateDesignProjectBJCInvoice.xsc">
       <DependentUpon>UpdateDesignProjectBJCInvoice.xsd</DependentUpon>

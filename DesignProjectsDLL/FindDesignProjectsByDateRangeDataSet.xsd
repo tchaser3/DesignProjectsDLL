@@ -37,6 +37,7 @@
               <Mapping SourceColumn="CompleteDate" DataSetColumn="CompleteDate" />
               <Mapping SourceColumn="Coordinator" DataSetColumn="Coordinator" />
               <Mapping SourceColumn="ProjectNotes" DataSetColumn="ProjectNotes" />
+              <Mapping SourceColumn="BillingID" DataSetColumn="BillingID" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -48,7 +49,7 @@
   <xs:element name="FindDesignProjectsByDateRangeDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="FindDesignProjectsByDateRangeDataSet" msprop:Generator_UserDSName="FindDesignProjectsByDateRangeDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="FindDesignProjectsByDateRange" msprop:Generator_TableClassName="FindDesignProjectsByDateRangeDataTable" msprop:Generator_TableVarName="tableFindDesignProjectsByDateRange" msprop:Generator_TablePropName="FindDesignProjectsByDateRange" msprop:Generator_RowDeletingName="FindDesignProjectsByDateRangeRowDeleting" msprop:Generator_RowChangingName="FindDesignProjectsByDateRangeRowChanging" msprop:Generator_RowEvHandlerName="FindDesignProjectsByDateRangeRowChangeEventHandler" msprop:Generator_RowDeletedName="FindDesignProjectsByDateRangeRowDeleted" msprop:Generator_UserTableName="FindDesignProjectsByDateRange" msprop:Generator_RowChangedName="FindDesignProjectsByDateRangeRowChanged" msprop:Generator_RowEvArgName="FindDesignProjectsByDateRangeRowChangeEvent" msprop:Generator_RowClassName="FindDesignProjectsByDateRangeRow">
+        <xs:element name="FindDesignProjectsByDateRange" msprop:Generator_TableClassName="FindDesignProjectsByDateRangeDataTable" msprop:Generator_TableVarName="tableFindDesignProjectsByDateRange" msprop:Generator_RowChangedName="FindDesignProjectsByDateRangeRowChanged" msprop:Generator_TablePropName="FindDesignProjectsByDateRange" msprop:Generator_RowDeletingName="FindDesignProjectsByDateRangeRowDeleting" msprop:Generator_RowChangingName="FindDesignProjectsByDateRangeRowChanging" msprop:Generator_RowEvHandlerName="FindDesignProjectsByDateRangeRowChangeEventHandler" msprop:Generator_RowDeletedName="FindDesignProjectsByDateRangeRowDeleted" msprop:Generator_RowClassName="FindDesignProjectsByDateRangeRow" msprop:Generator_UserTableName="FindDesignProjectsByDateRange" msprop:Generator_RowEvArgName="FindDesignProjectsByDateRangeRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="TransactionID" msprop:Generator_ColumnVarNameInTable="columnTransactionID" msprop:Generator_ColumnPropNameInRow="TransactionID" msprop:Generator_ColumnPropNameInTable="TransactionIDColumn" msprop:Generator_UserColumnName="TransactionID" type="xs:int" />
@@ -119,6 +120,7 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="BillingID" msprop:Generator_ColumnVarNameInTable="columnBillingID" msprop:Generator_ColumnPropNameInRow="BillingID" msprop:Generator_ColumnPropNameInTable="BillingIDColumn" msprop:Generator_UserColumnName="BillingID" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

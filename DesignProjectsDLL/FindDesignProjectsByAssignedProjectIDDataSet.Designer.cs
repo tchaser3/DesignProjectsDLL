@@ -309,6 +309,8 @@ namespace DesignProjectsDLL {
             
             private global::System.Data.DataColumn columnOfficeID;
             
+            private global::System.Data.DataColumn columnBillingID;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public FindDesignProjectsByAssignedProjectIDDataTable() {
@@ -464,6 +466,14 @@ namespace DesignProjectsDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn BillingIDColumn {
+                get {
+                    return this.columnBillingID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -499,7 +509,23 @@ namespace DesignProjectsDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public FindDesignProjectsByAssignedProjectIDRow AddFindDesignProjectsByAssignedProjectIDRow(int TransactionID, int ProjectID, System.DateTime DateReceived, string ProjectName, string ProjectAddress, string City, string JobType, string FirstName, decimal SurveyInvoice, decimal BJCInvoice, string JobStatus, System.DateTime CompleteDate, string Coordinator, string ProjectNotes, int OfficeID) {
+            public FindDesignProjectsByAssignedProjectIDRow AddFindDesignProjectsByAssignedProjectIDRow(
+                        int TransactionID, 
+                        int ProjectID, 
+                        System.DateTime DateReceived, 
+                        string ProjectName, 
+                        string ProjectAddress, 
+                        string City, 
+                        string JobType, 
+                        string FirstName, 
+                        decimal SurveyInvoice, 
+                        decimal BJCInvoice, 
+                        string JobStatus, 
+                        System.DateTime CompleteDate, 
+                        string Coordinator, 
+                        string ProjectNotes, 
+                        int OfficeID, 
+                        int BillingID) {
                 FindDesignProjectsByAssignedProjectIDRow rowFindDesignProjectsByAssignedProjectIDRow = ((FindDesignProjectsByAssignedProjectIDRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         TransactionID,
@@ -516,7 +542,8 @@ namespace DesignProjectsDLL {
                         CompleteDate,
                         Coordinator,
                         ProjectNotes,
-                        OfficeID};
+                        OfficeID,
+                        BillingID};
                 rowFindDesignProjectsByAssignedProjectIDRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowFindDesignProjectsByAssignedProjectIDRow);
                 return rowFindDesignProjectsByAssignedProjectIDRow;
@@ -554,6 +581,7 @@ namespace DesignProjectsDLL {
                 this.columnCoordinator = base.Columns["Coordinator"];
                 this.columnProjectNotes = base.Columns["ProjectNotes"];
                 this.columnOfficeID = base.Columns["OfficeID"];
+                this.columnBillingID = base.Columns["BillingID"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -589,6 +617,8 @@ namespace DesignProjectsDLL {
                 base.Columns.Add(this.columnProjectNotes);
                 this.columnOfficeID = new global::System.Data.DataColumn("OfficeID", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnOfficeID);
+                this.columnBillingID = new global::System.Data.DataColumn("BillingID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBillingID);
                 this.columnTransactionID.AllowDBNull = false;
                 this.columnProjectID.AllowDBNull = false;
                 this.columnDateReceived.AllowDBNull = false;
@@ -929,6 +959,23 @@ namespace DesignProjectsDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int BillingID {
+                get {
+                    try {
+                        return ((int)(this[this.tableFindDesignProjectsByAssignedProjectID.BillingIDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'BillingID\' in table \'FindDesignProjectsByAssignedProjectID\'" +
+                                " is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFindDesignProjectsByAssignedProjectID.BillingIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsCompleteDateNull() {
                 return this.IsNull(this.tableFindDesignProjectsByAssignedProjectID.CompleteDateColumn);
             }
@@ -949,6 +996,18 @@ namespace DesignProjectsDLL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetProjectNotesNull() {
                 this[this.tableFindDesignProjectsByAssignedProjectID.ProjectNotesColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsBillingIDNull() {
+                return this.IsNull(this.tableFindDesignProjectsByAssignedProjectID.BillingIDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetBillingIDNull() {
+                this[this.tableFindDesignProjectsByAssignedProjectID.BillingIDColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -1126,6 +1185,7 @@ namespace DesignProjectsDLL.FindDesignProjectsByAssignedProjectIDDataSetTableAda
             tableMapping.ColumnMappings.Add("Coordinator", "Coordinator");
             tableMapping.ColumnMappings.Add("ProjectNotes", "ProjectNotes");
             tableMapping.ColumnMappings.Add("OfficeID", "OfficeID");
+            tableMapping.ColumnMappings.Add("BillingID", "BillingID");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
